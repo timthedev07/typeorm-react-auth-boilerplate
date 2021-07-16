@@ -1,0 +1,15 @@
+html {
+  background-color: #313131;
+  color: white;
+}
+
+a,
+a:hover {
+  color: goldenrod;
+}
+
+pre {
+  background-color: #44474d;
+  padding: 10px;
+  border-radius: 7px;
+}
