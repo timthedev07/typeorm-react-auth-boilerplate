@@ -30,6 +30,7 @@ For people who prefer GraphQL over REST, this is the right template for you if y
 git clone https://github.com/timthedev07/typeorm-react-auth-boilerplate.git
 cd typeorm-react-auth-boilerplate
 rm -rf .git # ignore this step if your are contributing to the repository
+sh setup.sh
 ```
 
 Then follow the instructions in each of the README files respectively.
