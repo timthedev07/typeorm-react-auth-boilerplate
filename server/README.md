@@ -58,7 +58,7 @@ And in the [root](../) directory of this project:
 ```bash
 git remote add heroku https://git.heroku.com/auth-api.git # add the remote to our repo for logging purposes
 cd server
-
+sh herokuDeploy.sh
 ```
 
 **_From now on, all the environment variables mentioned should be filled directly in your heroku app's Config Vars section._**
