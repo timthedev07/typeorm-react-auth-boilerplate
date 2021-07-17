@@ -21,7 +21,6 @@ router.post("/refresh_token", async (req, res) => {
   try {
     payload = verify(token, process.env.REFRESH_TOKEN_SECRET!);
   } catch (err) {
-    console.error(err);
     return res.send({ ok: false, accessToken: "" });
   }
   // token is valid and we can send back an access token

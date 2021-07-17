@@ -8,7 +8,8 @@ export const sendEmail = async (
   recipient: string,
   url: string,
   verb: string,
-  noun: string
+  noun: string,
+  extraText?: string
 ) => {
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
@@ -32,6 +33,7 @@ export const sendEmail = async (
     const data = {
       url,
       buttonText: verb.charAt(0).toUpperCase() + verb.slice(1),
+      extraText,
     };
     html = template(data);
   } catch (err) {
