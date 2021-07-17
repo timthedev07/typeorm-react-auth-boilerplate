@@ -46,8 +46,9 @@
   },
   "scripts": {
     "start:development": "npx concurrently \"killall redis-server; redis-server\" \"npx ts-node-dev src/index.ts\"",
-    "prestart": "yarn build",
     "start": "node dist/index.js",
-    "build": "tsc"
+    "build": "tsc",
+    "postinstall": "yarn build",
+    "tsc": "tsc"
   }
 }
