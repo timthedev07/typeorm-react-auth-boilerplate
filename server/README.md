@@ -19,7 +19,8 @@ You can remove the `Procfile` in the current directory if you don't plan o hosti
 **Instructions**
 
 **_Important Part: Complete `.env` file with your own credentials_**
-Fill following environment variables out:
+
+Fill the following environment variables out:
 
 - ACCESS_TOKEN_SECRET
 - REFRESH_TOKEN_SECRET
@@ -50,13 +51,14 @@ Login to the heroku CLI if not already:
 heroku login
 ```
 
+Before the next step, modify [this shell script](./herokuDeploy.sh) file to apply the automation to your heroku git remote.
+
 And in the [root](../) directory of this project:
 
 ```bash
-git remote add heroku https://git.heroku.com/auth-api.git # add the remote to our repo
-git add server
-git commit server -m "added server"
-git subtree push --prefix server heroku master
+git remote add heroku https://git.heroku.com/auth-api.git # add the remote to our repo for logging purposes
+cd server
+
 ```
 
 **_From now on, all the environment variables mentioned should be filled directly in your heroku app's Config Vars section._**
