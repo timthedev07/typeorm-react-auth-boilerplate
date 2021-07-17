@@ -8,7 +8,7 @@ It empowers incredible abilities such as consistent type definitions on both sid
 ## Get Started
 
 ```bash
-git clone https://github.com/timthedev07/typeorm-react-auth-boilerplate.git
+git clone --single-branch --branch publish https://github.com/timthedev07/typeorm-react-auth-boilerplate.git
 cd typeorm-react-auth-boilerplate
 rm -rf .git # ignore this step if your are contributing to the repository
 sh setup.sh
