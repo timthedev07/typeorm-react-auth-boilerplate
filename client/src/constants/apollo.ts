@@ -2,4 +2,4 @@
 export const BACKEND =
   process.env.NODE_ENV !== "production"
     ? "http://localhost:4000"
-    : "https://your-site-name.herokuapp.com"; // change this line
+    : "https://authauthauth.herokuapp.com"; // replace this URL with your production API
