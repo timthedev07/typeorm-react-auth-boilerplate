@@ -8,15 +8,7 @@ import { buildSchema } from "type-graphql";
 import { router as AuthRouter } from "./routes/AuthRoute";
 import cookieParser from "cookie-parser";
 import { createConnection } from "typeorm";
-
-const production = process.env.NODE_ENV === "production";
-
-export const FRONTEND = production
-  ? "https://your-site-name.netlify.app" // change this line
-  : "http://localhost:3000";
-const PLAYGROUND = "https://studio.apollographql.com";
-const PORT = parseInt(process.env.PORT || "9000");
-const HOSTNAME = production ? "0.0.0.0" : "localhost";
+import { FRONTEND, HOSTNAME, PLAYGROUND, PORT } from "./constants/global";
 
 (async () => {
   const app = express();
