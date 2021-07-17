@@ -60,6 +60,4 @@ const config = {
     : undefined,
 };
 
-console.log(config);
-
 module.exports = config;
