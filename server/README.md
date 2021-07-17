@@ -91,7 +91,11 @@ Where everything before the _colon_ is the host, and the number after it is the 
 If you did everything correctly, your heroku config vars should contain something like this.
 ![redis config](https://raw.githubusercontent.com/timthedev07/Your-Doge/staging/assets/redisconfig.png)
 
-### **3.Restart your app!**
+### **3.Update frontend URL to allow for cors**
+
+In [the global.ts file](./src/constants/global.ts), update the `FRONTEND` variable according to your frontend app URL. Although you can also do this later if you have not yet hosted your app.
+
+### **4.Restart your app!**
 
 ```bash
 heroku restart

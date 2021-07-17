@@ -25,11 +25,13 @@ It should automatically pop a tab up in your browser, and if not visit [here](ht
 
 ## Hosting
 
-For hosing I choose netlify, because it's free and easy to use.
+For hosing frontend applications I choose netlify, because it's free and easy to use.
 
 **Instructions**
 
-First, create a new repository on github, and let's assume it is identified as `me/auth-project` where me is your username and auth-project represents just whatever the name you gave to your repository.
+First we need to modify our production backend URL in [apollo.ts](./src/constants/apollo.ts) if you have hosted your backend already, if not, you can do that later on.
+
+Then, create a new repository on github, and let's assume it is identified as `me/auth-project` where me is your username and auth-project represents just whatever the name you gave to your repository.
 
 **_In the root directory of the project:_**
 
