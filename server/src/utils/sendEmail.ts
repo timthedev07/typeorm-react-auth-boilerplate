@@ -41,7 +41,7 @@ export const sendEmail = async (
   }
 
   const mailOptions: Mail.Options = {
-    from: `"No Reply" <${process.env.USERNAME}>`,
+    from: `"No Reply" <${process.env.MAIL_USERNAME}>`,
     to: recipient,
     subject: `${verb.charAt(0).toUpperCase() + verb.slice(1)} your ${noun}`,
     html,
