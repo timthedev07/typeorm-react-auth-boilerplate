@@ -5,9 +5,20 @@ const fileType = MODE === "production" ? "js" : "ts";
 
 const production = MODE === "production";
 
+if (production) {
+}
 const DB_URl = process.env.DATABASE_URL;
 
 const parseHeroku = (url) => {
+  if (!url) {
+    return {
+      host: "",
+      port: "",
+      username: "",
+      password: "",
+      database: "",
+    };
+  }
   url = url.slice(11);
 
   const [username, a, b] = url.split(":");
