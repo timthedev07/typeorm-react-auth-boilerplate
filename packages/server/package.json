@@ -21,6 +21,7 @@
     "ts-node": "10.2.1"
   },
   "dependencies": {
+    "cross-env": "5.0.5",
     "apollo-server": "^3.1.2",
     "apollo-server-express": "^3.1.2",
     "bcrypt": "^5.0.1",

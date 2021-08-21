@@ -1,7 +1,17 @@
 {
   "name": "typeorm-react-auth-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "Typeorm + React + GraphQL fullstack authentication boilerplate",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/typeorm",
+      "**/typeorm/**"
+    ]
+  },
   "scripts": {
     "start": "npx concurrently \"cd client && yarn \" \"\""
   },
