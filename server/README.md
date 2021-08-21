@@ -33,7 +33,7 @@ Open up a terminal in the current directory:
 
 ```bash
 yarn # install dependencies
-yarn start:development
+yarn dev
 ```
 
 ## Hosting
