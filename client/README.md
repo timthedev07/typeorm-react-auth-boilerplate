@@ -18,7 +18,7 @@ Open up a terminal in the current directory:
 
 ```bash
 yarn # install dependencies
-yarn start # start the development server
+yarn dev# start the development server
 ```
 
 It should automatically pop a tab up in your browser, and if not visit [here](http://localhost:3000).
